@@ -1,0 +1,17 @@
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+
+import pdfFile from '/test_pdf';
+
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
+
+function PDFViewer() {
+  return (
+      <div style={{ height: '600px', width: '100%' }}>
+        <Viewer fileUrl={pdfFile} />
+      </div>
+  );
+}
+
+export default PDFViewer;
