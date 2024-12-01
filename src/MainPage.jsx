@@ -13,7 +13,7 @@ function Mainpage() {
 
             <Grid2 container spacing={2}>
                 {Array.from(Array(24)).map((_, index) => {
-                    if(now <= new Date(`2024-12-${index + 1}`)) {
+                    if(now >= new Date(`2024-12-${index + 1}`)) {
                         return (<Grid2 key={index}>
                             <Button onClick={()=> {
                                 navigate(`/door_${index+1}`);

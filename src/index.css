@@ -30,7 +30,8 @@ code {
 }
 
 .page-container {
-  margin: 10vw;
+  padding: 5vh;
+  height: 80vh;
 }
 
 .divider-custom {
